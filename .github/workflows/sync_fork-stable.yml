@@ -18,7 +18,7 @@ jobs:
     - name: Checkout target repo
       uses: actions/checkout@v2
       with:
-        repository: julyworlds/openwrt-cudy-x6
+        repository: waja/openwrt-cudy-x6
         persist-credentials: false
         ref: openwrt-21.02
 
@@ -40,6 +40,6 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        repository: julyworlds/openwrt-cudy-x6
+        repository: waja/openwrt-cudy-x6
         github_token: ${{ secrets.PUSH_TOKEN }}
         branch: openwrt-21.02

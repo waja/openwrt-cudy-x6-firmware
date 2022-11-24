@@ -12,7 +12,7 @@
 name: Update Checker Stable
 
 env:
-  REPO_URL: https://github.com/julyworlds/openwrt-cudy-x6
+  REPO_URL: https://github.com/waja/openwrt-cudy-x6
   REPO_BRANCH: openwrt-21.02
 
 on:

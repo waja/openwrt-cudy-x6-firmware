@@ -21,7 +21,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/julyworlds/openwrt-cudy-x6
+  REPO_URL: https://github.com/waja/openwrt-cudy-x6
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
