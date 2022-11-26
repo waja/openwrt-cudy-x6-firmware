@@ -63,6 +63,9 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
+    - name: Patch Cudy X6 DTS file
+      run: cd openwrt && patch -p1<$GITHUB_WORKSPACE/mt7621_cudy_x6_fix_dts.patch
+
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
