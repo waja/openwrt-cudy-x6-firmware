@@ -1,0 +1,21 @@
+diff --git a/target/linux/ramips/dts/mt7621_cudy_x6.dts b/target/linux/ramips/dts/mt7621_cudy_x6.dts
+index ebb2149172..157205ad4c 100644
+--- a/target/linux/ramips/dts/mt7621_cudy_x6.dts
++++ b/target/linux/ramips/dts/mt7621_cudy_x6.dts
+@@ -53,13 +53,14 @@
+ 
+ };
+ 
+-&spi0 {
++spi0 {
+ 	status = "okay";
+ 
+ 	flash@0 {
+ 		compatible = "jedec,spi-nor";
+ 		reg = <0>;
+-		spi-max-frequency = <50000000>;
++		spi-max-frequency = <80000000>;
++		m25p,fast-read;
+ 
+ 		partitions {
+ 			compatible = "fixed-partitions";
