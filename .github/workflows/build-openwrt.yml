@@ -64,7 +64,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Patch Cudy X6 DTS file
-      run: cd openwrt && patch -p1<$GITHUB_WORKSPACE/mt7621_cudy_x6_fix_dts_cudy_2102.patch
+      run: cd openwrt && patch -p1<$GITHUB_WORKSPACE/mt7621_cudy_x6_fix_dts_2102.patch && patch -p1<$GITHUB_WORKSPACE/mt7621_cudy_x6_fix_dts_cudy.patch
 
     - name: Load custom feeds
       run: |
