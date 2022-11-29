@@ -1,0 +1,36 @@
+diff --git a/target/linux/ramips/dts/mt7621_cudy_x6.dts b/target/linux/ramips/dts/mt7621_cudy_x6.dts
+index ebb2149172..5bb5022bb0 100644
+--- a/target/linux/ramips/dts/mt7621_cudy_x6.dts
++++ b/target/linux/ramips/dts/mt7621_cudy_x6.dts
+@@ -87,24 +87,24 @@
+ 			partition@50000 {
+ 				compatible = "denx,uimage";
+ 				label = "firmware";
+-				reg = <0x50000 0x1f80000>;
++				reg = <0x50000 0xf80000>;
+ 			};
+ 
+-			partition@1fd0000 {
++			partition@fd0000 {
+ 				label = "debug";
+-				reg = <0x1fd0000 0x10000>;
++				reg = <0xfd0000 0x10000>;
+ 				read-only;
+ 			};
+ 
+-			partition@1fe0000 {
++			partition@fe0000 {
+ 				label = "backup";
+-				reg = <0x1fe0000 0x10000>;
++				reg = <0xfe0000 0x10000>;
+ 				read-only;
+ 			};
+ 
+-			bdinfo: partition@1ff0000 {
++			bdinfo: partition@ff0000 {
+ 				label = "bdinfo";
+-				reg = <0x1ff0000 0x10000>;
++				reg = <0xff0000 0x10000>;
+ 				read-only;
+ 			};
+ 		};
