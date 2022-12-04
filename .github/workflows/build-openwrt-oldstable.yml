@@ -11,8 +11,8 @@
 name: Build OpenWrt Oldstable
 
 on:
-  repository_dispatch:
-    types: oldstable
+#  repository_dispatch:
+#    types: oldstable
   workflow_dispatch:
     inputs:
       ssh:
