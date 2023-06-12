@@ -33,7 +33,7 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Europe/Amsterdam
-  NAME: stable-23.05
+  NAME: newstable-23.05
 
 jobs:
   build:
