@@ -63,8 +63,8 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
-    - name: Patch Cudy specific stuff
-      run: cd openwrt && patch -p1<$GITHUB_WORKSPACE/98be59ecf65106ba8068049664603f8c225bf840.patch
+#    - name: Patch Cudy specific stuff
+#      run: cd openwrt && patch -p1<$GITHUB_WORKSPACE/98be59ecf65106ba8068049664603f8c225bf840.patch
 
     - name: Load custom feeds
       run: |
